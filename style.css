@@ -1,0 +1,63 @@
+:root {
+    --outer-bg: #101010; /* 👈 Set outer background color here */
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--outer-bg); /* use the variable here */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  canvas {
+    display: block;
+    background-color: black; /* ← canvas area */
+    width: auto;
+    height: 100vh;
+  }
+  
+  #description {
+    margin: 16px;
+    text-align: center; /* 👈 Add this */
+  }
+  
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', sans-serif;
+    z-index: 10;
+  }
+  
+  #overlay h1,
+  #overlay h3,
+  #overlay button {
+    font-weight: 400; /* try 100 or 200 for ultra light, 300 for light */
+    margin: 12px;
+  }
+  
+  #overlay button {
+    margin-top: 32px;
+    font-family: 'Roboto Mono', sans-serif;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0%;
+    border: 0px solid white;
+    background: white;
+    color: black;
+    outline: none;
+    box-shadow: none;
+  }
+  
